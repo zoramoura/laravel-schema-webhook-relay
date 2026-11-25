@@ -79,9 +79,9 @@ const stats = ref(page.props.stats || {});
                 <div class="px-6 py-4">
 <pre class="text-sm text-gray-700 bg-gray-100 p-4 rounded overflow-x-auto">curl -X POST http://localhost:8000/ingest/acme \
   -H "Content-Type: application/json" \
-  -H "X-Webhook-Signature: sha256=<hmac>" \
-  -H "X-Webhook-Timestamp: <unix_ts>" \
-  -H "Idempotency-Key: <unique_key>" \
+  -H "X-Webhook-Signature: sha256=&lt;hmac&gt;" \
+  -H "X-Webhook-Timestamp: &lt;unix_ts&gt;" \
+  -H "Idempotency-Key: &lt;unique_key&gt;" \
   -d '{"id":"inv_123","amount":1999,"currency":"usd","status":"paid"}'</pre>
                 </div>
             </div>
